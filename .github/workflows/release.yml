@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Download artifact Linux GCC
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: linux-gcc.yml
           branch: dev
@@ -28,7 +28,7 @@ jobs:
           path: ark-linux-gcc-version
 
       - name: Download artifact Windows MSVC
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: msvc.yml
           branch: dev
